@@ -1,0 +1,84 @@
+body {
+	margin: 30px;
+	font-family: "Georgia", serif;
+	line-height: 1.8em;
+	color: #333;
+	box-sizing: border-box;
+}
+
+.dragZone{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.shipContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cells {
+	border: 0.5px solid black;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: white;
+}
+
+td {
+	vertical-align: 50px;
+}
+
+td.heads{
+	background-color: blue;
+	color: white;
+}
+
+.grid{
+	display: inline-block;
+}
+
+.hasShip {
+	background-color: blue;
+	color: white;
+}
+
+.hovered{
+	background-color: red !important;
+	animation: blinker 1s linear infinite;*/
+}
+
+
+
+@keyframes blinker {
+	50% {
+		opacity: 0.4;
+	}
+}
+
+.ship{
+	border: .5px solid black;
+	height: 30px;
+	background-color: green;
+}
+
+.patrol{
+	width: 31px;
+}
+
+.destroyer{
+	width: 62px;
+}
+
+.carrier{
+	width: 93px;
+}
+
+.battleship{
+	color: white;
+	font-size: 10px;
+	width: 124px;
+}
